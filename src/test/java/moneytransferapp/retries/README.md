@@ -2,13 +2,13 @@ In intelliJ, select run all the test in the "retries" directory. It should fail 
 Sample error logs:
 
 
-> Task :compileJava UP-TO-DATE
-> Task :processResources UP-TO-DATE
-> Task :classes UP-TO-DATE
-> Task :compileTestJava UP-TO-DATE
-> Task :processTestResources NO-SOURCE
-> Task :testClasses UP-TO-DATE
-> Task :test
+Task :compileJava UP-TO-DATE
+Task :processResources UP-TO-DATE
+Task :classes UP-TO-DATE
+Task :compileTestJava UP-TO-DATE
+Task :processTestResources NO-SOURCE
+Task :testClasses UP-TO-DATE
+Task :test
 18:03:00.335 [Test worker] INFO  i.t.s.WorkflowServiceStubsImpl - Created GRPC client for channel: ManagedChannelOrphanWrapper{delegate=ManagedChannelImpl{logId=1, target=directaddress:///a17db08b-4087-4fa4-9a9b-a3f616a2bfef}}
 18:03:00.351 [Test worker] INFO  i.t.s.WorkflowServiceStubsImpl - Created GRPC client for channel: ManagedChannelOrphanWrapper{delegate=ManagedChannelImpl{logId=5, target=directaddress:///db35c48d-eaf7-44d5-bee5-5ea27a4a245a}}
 18:03:00.407 [Test worker] INFO  io.temporal.internal.worker.Poller - start(): Poller{options=PollerOptions{maximumPollRateIntervalMilliseconds=1000, maximumPollRatePerSecond=0.0, pollBackoffCoefficient=2.0, pollBackoffInitialInterval=PT0.1S, pollBackoffMaximumInterval=PT1M, pollThreadCount=2, pollThreadNamePrefix='Workflow Poller taskQueue="MY_WORKFLOW_TASK_QUEUE", namespace="default"'}, identity=76913@Nathans-MBP-2.gha.chartermi.net}
@@ -259,11 +259,11 @@ Caused by: java.lang.IllegalStateException: COMMAND_TYPE_SCHEDULE_ACTIVITY_TASK 
 	at io.temporal.internal.statemachines.WorkflowStateMachines.handleEventImpl(WorkflowStateMachines.java:194)
 	at io.temporal.internal.statemachines.WorkflowStateMachines.handleEvent(WorkflowStateMachines.java:173)
 	... 11 common frames omitted
-> Task :test FAILED
+Task :test FAILED
 FAILURE: Build failed with an exception.
 * What went wrong:
 Execution failed for task ':test'.
-> Build cancelled while executing task ':test'
+Build cancelled while executing task ':test'
 * Try:
 Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
 * Get more help at https://help.gradle.org
