@@ -2,6 +2,7 @@ In intelliJ, select run all the test in the "retries" directory. It should fail 
 Sample error logs:
 
 
+```
 Task :compileJava UP-TO-DATE
 Task :processResources UP-TO-DATE
 Task :classes UP-TO-DATE
@@ -269,4 +270,4 @@ Run with --stacktrace option to get the stack trace. Run with --info or --debug 
 * Get more help at https://help.gradle.org
 BUILD FAILED in 1m 8s
 4 actionable tasks: 1 executed, 3 up-to-date
-
+```
